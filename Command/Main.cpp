@@ -16,7 +16,7 @@ void fillCommandQueue(std::queue<Command*> &commandQueue)
     commandQueue.push(move4);
 }
 
-void executeCommands(std::queue<Command*> &commandQueue, Charcater &character)
+void executeCommands(std::queue<Command*> &commandQueue, Character &character)
 {
     while(!commandQueue.empty())
     {
@@ -31,6 +31,6 @@ int main()
     std::queue<Command*> commandQueue;
     fillCommandQueue(commandQueue);
 
-    Charcater joseph("Joseph");
+    Character joseph("Joseph");
     executeCommands(commandQueue, joseph);
 }

@@ -7,12 +7,12 @@
 class Move : public Command
 {
     public:
-        void execute(Charcater &character) override
+        void execute(Character &character) override
         {
             std::cout << "Character: "<< character.name << " has moved!" << std::endl;
         }
 
-        void undo(Charcater &character) override
+        void undo(Character &character) override
         {
             
         }
