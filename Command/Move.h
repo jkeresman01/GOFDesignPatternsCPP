@@ -14,6 +14,6 @@ class Move : public Command
 
         void undo(Character &character) override
         {
-            
+            std::cout << "Undo command was executed for "<< character.name << std::endl;
         }
 };
