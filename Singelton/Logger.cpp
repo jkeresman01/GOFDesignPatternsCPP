@@ -13,8 +13,6 @@ Logger::~Logger()
     {
         delete s_instance;
     }
-
-    std::cout << "Logger has been destroyed!" << std::endl;
 }
 
 void Logger::addMessage(const std::string &message)
