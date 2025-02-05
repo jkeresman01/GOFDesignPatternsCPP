@@ -3,15 +3,21 @@
 
 int main()
 {
-    Subject subject;
+    Observer* observer1 = new Observer("observer-1");
+    Observer* observer2 = new Observer("observer-2");
+    Observer* observer3 = new Observer("observer-1");
 
-    Observer observer1("observer-1");
-    Observer observer2("observer-2");
-    Observer observer3("observer-1");
+    Subject* subject = new Subject;
 
-    subject.AddObserver(&observer1);
-    subject.AddObserver(&observer2);
-    subject.AddObserver(&observer3);
+    subject->AddObserver(observer1);
+    subject->AddObserver(observer2);
+    subject->AddObserver(observer3);
 
-    subject.NotifyAll();
+    subject->NotifyAll();
+
+    delete observer1;
+    delete observer2;
+    delete observer3;
+
+    delete subject;
 }
