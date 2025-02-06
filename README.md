@@ -1,4 +1,4 @@
-# GOFDesignPatternsJava
+# GOFDesignPatternsJava ----> NOT YET BAKED
 Elements of Reusable Object Oriented Software - GOF Design Pattern
 
 # GOFDesignPatterns
