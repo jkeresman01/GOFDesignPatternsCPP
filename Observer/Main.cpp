@@ -5,7 +5,7 @@ int main()
 {
     Observer* observer1 = new Observer("observer-1");
     Observer* observer2 = new Observer("observer-2");
-    Observer* observer3 = new Observer("observer-1");
+    Observer* observer3 = new Observer("observer-3");
 
     Subject* subject = new Subject;
 
